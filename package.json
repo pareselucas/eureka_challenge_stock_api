@@ -1,0 +1,40 @@
+{
+  "name": "stock-market-api-service",
+  "version": "1.0.0",
+  "description": "Stock Market API Service",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node",
+    "build": "babel src --out-dir build",
+    "start": "node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pareselucas/eureka_challenge"
+  },
+  "keywords": [],
+  "author": "Lucas Parese",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pareselucas/eureka_challenge"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.5",
+    "@babel/core": "^7.11.5",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^6.3.0",
+    "helmet": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.2",
+    "morgan": "^1.10.0",
+    "node-fetch": "2.6.0"
+  }
+}
